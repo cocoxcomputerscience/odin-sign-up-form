@@ -54,6 +54,10 @@ body {
     background-repeat: no-repeat;
     min-width: max(250px, 30%);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #sidebar > div {
@@ -80,6 +84,20 @@ body {
 h1 {
     font-size: 3rem;
     font-family: 'fff_tusjbold';
+}
+
+#sidebar cite {
+    color: white;    
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+#sidebar cite a {
+    color: white;
+}
+
+#sidebar cite a:hover {
+    color: lightgray;
 }
 
 /* form */

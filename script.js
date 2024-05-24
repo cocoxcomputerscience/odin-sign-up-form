@@ -99,13 +99,13 @@ password.addEventListener("input", () => {
     let upper = /[A-Z]/;
     let lower = /[a-z]/;
     let digit = /\d/;
-    passwordUpper.textContent = upper.test(password.value) ? passwordUpper.textContent.replace("𐄂", "✓") : passwordUpper.textContent.replace("✓", "𐄂"); 
-    passwordLower.textContent = lower.test(password.value) ? passwordLower.textContent.replace("𐄂", "✓") : passwordLower.textContent.replace("✓", "𐄂"); 
-    passwordDigit.textContent = digit.test(password.value) ? passwordDigit.textContent.replace("𐄂", "✓") : passwordDigit.textContent.replace("✓", "𐄂"); 
+    passwordUpper.textContent = upper.test(password.value) ? passwordUpper.textContent.replace("X", "✓") : passwordUpper.textContent.replace("✓", "X"); 
+    passwordLower.textContent = lower.test(password.value) ? passwordLower.textContent.replace("X", "✓") : passwordLower.textContent.replace("✓", "X"); 
+    passwordDigit.textContent = digit.test(password.value) ? passwordDigit.textContent.replace("X", "✓") : passwordDigit.textContent.replace("✓", "X"); 
     if (password.value.length >= 8 && password.value.length <= 20) {
-        passwordChar.textContent = passwordChar.textContent.replace("𐄂", "✓");
+        passwordChar.textContent = passwordChar.textContent.replace("X", "✓");
     } else {
-        passwordChar.textContent = passwordChar.textContent.replace("✓", "𐄂");
+        passwordChar.textContent = passwordChar.textContent.replace("✓", "X");
     }
 
     if (password.checkValidity()) removeErrorBorder(password);

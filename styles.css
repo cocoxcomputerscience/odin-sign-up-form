@@ -36,6 +36,11 @@ button {
     font-family: inherit;
 }
 
+input:focus {
+    outline: none;
+    box-shadow: 1px 1px 2px var(--cambridge-blue);
+}
+
 html {
     font-size: 16px;
 }
@@ -43,7 +48,7 @@ html {
 /* body */
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Georgia, serif;
 }
 
@@ -142,11 +147,36 @@ input {
     display: block;
     width: 12rem;
     line-height: 1.4rem;
+    padding-left: 0.2rem;
     border: 1px solid var(--cambridge-blue);
     border-radius: 3px;
 }
 
 label {
+    font-family: 'antic_sansregular';
+    letter-spacing: 1px;
+}
+
+/* form validity */
+#require-text {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+#password-requirements {
+    display: none;
+    font-size: 0.7rem;
+    font-family: 'antic_sansregular';
+    margin-top: 0.5rem;
+}
+
+input + div {
+    color: red;
+    font-size: 0.7rem;
     font-family: 'antic_sansregular';
 }
 

@@ -42,7 +42,7 @@ input:focus {
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* body */
@@ -208,4 +208,51 @@ button[type="submit"]:hover {
 
 #form-submit a:hover {
     color: var(--english-violet);
+}
+
+/* media queries */
+@media (width < 1000px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (width < 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #sidebar > div {
+        position: static;
+        background: none;
+        padding: 1.5rem 2rem;
+    }
+    
+    #sidebar-text {
+        justify-content: flex-start;
+    }
+
+    #sidebar cite {
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (width < 500px) {
+    #form-input > section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    input {
+        width: 15rem;
+    }
 }

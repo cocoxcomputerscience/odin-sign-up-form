@@ -224,7 +224,7 @@ button[type="submit"]:hover {
     }
 
     #sidebar {
-        width: 100%;
+        min-width: 100%;
         height: auto;
         align-items: flex-start;
     }
